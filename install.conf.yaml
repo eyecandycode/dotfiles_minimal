@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.zshrc:
+    ~/.gitconfig:
+
+# Example: Use this to create a folder named 'Code'
+# - create:
+#     - ~/Code
+
+- shell:
+    - command: ./setup_brew.zsh
+      stdout: true
+      sterr: true
